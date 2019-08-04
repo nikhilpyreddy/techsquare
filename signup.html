@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up | Tech Square</title>
+        <link rel="stylesheet" href="signupstyle.css" type="text/css">
+        <link rel="stylesheet" href="font.css" type="text/css">
+       
+        <script>
+            function validate(){
+                var phn=/(^[6-9])(\d{9}$)/g;
+                if(phn.test(document.getElementById("phhhn").value)){
+                    var pss=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&\*])(?=.{8,})/;
+                    if(pss.test(pwd.value)){
+
+                   
+                    if(document.getElementById("pwd").value==document.getElementById("cpwd").value){
+                        return true;
+                    }else{
+                        alert("Passwords not matched('Please check the case')");
+                        return false;
+                    }
+                    }else{
+                        alert("Password didn't meet the requirements.");
+                        return false;
+
+                    }
+                }
+                else{
+                    alert("Enter correct phone number.");
+                    return false;
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <div class="Holder">
+                <header>
+                    <br>
+                    <h1><a id="headlink" href="index.html" style="text-decoration: none">Tech Square</a></h1>
+                </header>
+            <div class="Navbar" style="margin-top: -25px">
+                    <nav>    
+                        <ul>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="signin.html">Sign In</a></li>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <div class="content">
+                <form  onsubmit="return validate()" action="index.html">
+                    <h1>Sign Up</h1>
+                    <input type="text" class="txtbx" placeholder="First Name" name="fname" id="fnme">
+                    <input type="text" class="txtbx" name="lname" placeholder="Last Name" id="lnme" ><br>
+                    <input type="email" class="txtbx" placeholder="email address" id="mail" ><br>
+                    <input type="date" placeholder="Date Of Birth" class="txtbx" id="dob" ><br>
+                    Gender: 
+                    <input type="radio" name="gender" value="Male" required>Male
+                    <input type="radio" name="gender" value="Female" required>Female
+                    <input type="radio" name="gender" value="Other" required>Other<br>
+                    <input type="tel" class="txtbx" placeholder="Phone" name="phone" id="phhhn" required><br>
+                    <textarea name="bio" id="bio" class="txtbx" placeholder="Bio(Optional)" cols="25" rows="4"></textarea><br>
+                    <input type="password" class="txtbx" placeholder="Password" name="pwd" id="pwd" required><br>
+                    <input type="password" class="txtbx" placeholder="Confirm Password" name="cpwd" id="cpwd" required><br>
+                    <input type="submit" class="btn" value="Create Account" onclick="validation()"><br>
+                    <a href="#">Forgot Password?</a><br>
+                    Already had account? <a href="signin.html">Sign In</a>.
+                </form>
+            </div>
+            
+            
+            <footer>
+                <div class="footer">
+                    <!-- Copyright -->
+                    <div class="footer">© 2018 Copyright: HPNH Studios Inc.</div>
+                <!-- Copyright -->
+                </div>
+            </footer>
+            
+        </div>
+
+    </body>
+</html>

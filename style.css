@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    
+}
+#Holder{
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+nav{
+    height: 70px;
+    margin-bottom: 11px;
+}
+.Navbar{
+    height: 60px;
+    background: #ef5350;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    list-style-type: none;
+    float: right;
+    display: block;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 17px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover{
+    background: whitesmoke;
+}
+nav ul li:hover a{
+    display: block;
+    color:#ef5350;
+}
+footer {
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ef5350;
+    color: white;
+    height: auto;
+    display: inline;
+}
+header{
+    background: #ef5350;
+    text-align: center;
+    color: white;
+}
+#headlink{
+    color: white;
+}
+.topic-folder{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background: linear-gradient(75deg, #ff8a80, white, #ff8a80 );
+    border-radius: 20px;
+}
+#images{
+    height: 6cm;
+    width: 10cm;
+    display: inline-block;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-radius:10px;
+  }
